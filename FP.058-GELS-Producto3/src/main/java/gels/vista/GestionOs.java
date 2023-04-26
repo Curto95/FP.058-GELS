@@ -177,12 +177,12 @@ public class GestionOs {
         float precio = 0;
         final String codArtField = "Codigo del articulo : ";
         final String cantidadField = "Cantidad: ";
+        final String idPedidoField = "Id Pedido: ";
+        final String precioField = "Precio: ";
         System.out.println("Añadir un pedido");
         System.out.println("==============================================");
-        System.out.print("\nEmail del Cliente: ");
-        cli = teclado.nextLine();
-        System.out.print(codArtField);
-        articulo = entradaEntero(codArtField);
+        System.out.print(idPedidoField);
+        idPedido = entradaEntero(idPedidoField);
         System.out.print(cantidadField);
         Cantidad = entradaEntero(cantidadField);
         System.out.print("Fecha Pedido (dd/mm/yyyy): ");
@@ -193,6 +193,15 @@ public class GestionOs {
         } catch (ParseException e) {
             throw new FechaExcepcion("No ha sido posible crear el pedido, la fecha no es valida\n El pedido no ha sido creado, intentelo de nuevo\n\n");
         }
+        System.out.print(codArtField);
+        articulo = entradaEntero(codArtField);
+        System.out.print("\nEmail del Cliente: ");
+        cli = teclado.nextLine();
+        System.out.print(precioField);
+        precio = entradaFloat(precioField);
+        
+        
+        
         
 
         idPedido = controlador.addPedidos(idPedido, Cantidad, FechaHora, articulo, cli, precio);
