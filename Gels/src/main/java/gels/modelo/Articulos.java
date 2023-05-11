@@ -1,12 +1,21 @@
-package gels.modelo;
+package main.java.gels.modelo;
+
+import jakarta.persistence.Entity;
+
 /**
  *
  * @author Gels
  */
 //Declaramos la clase Articulos con sus variables y tipos
+
+@Entity
 public class Articulos {
+    @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
     int idArticulos;
+    @Basic
     String descripcion;
+    
     float precioEnvio;
     float precioProducto;
     int tiempoPrepEnvio;
@@ -27,11 +36,11 @@ public class Articulos {
     public void setidArticulos(int idArticulo) {
         this.idArticulos = idArticulo;
     }
-    //Declaramos get de descripci贸n del articulo
+    //Declaramos get de descripci髇 del articulo
     public String getDescripcion() {
         return descripcion;
     }
-    //Declaramos set de descripci贸n del articulo
+    //Declaramos set de descripci髇 del articulo
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
@@ -51,11 +60,11 @@ public class Articulos {
     public void setPrecioEnvio(float precioEnvio) {
         this.precioEnvio = precioEnvio;
     }
-    //Declaramos get del tiempo de preparaci贸n del envio
+    //Declaramos get del tiempo de preparaci髇 del envio
     public int getTiempoPrepEnvio() {
         return tiempoPrepEnvio;
     }
-    //Declaramos set del tiempo de preparaci贸n del envio
+    //Declaramos set del tiempo de preparaci髇 del envio
     public void setTiempoPrepEnvio(int tiempoPrepEnvio) {
         this.tiempoPrepEnvio = tiempoPrepEnvio;
     }
@@ -63,6 +72,6 @@ public class Articulos {
    //Metodo toString para devolver los valores
     @Override
     public String toString() {
-    	return idArticulos + ": |" +  descripcion + "| Precio del producto: " + precioProducto + " | Precio del env铆o: " +  precioEnvio  + " | Tiempo de preparacion: " + tiempoPrepEnvio + " d铆as";
+    	return idArticulos + ": |" +  descripcion + "| Precio del producto: " + precioProducto + " | Precio del env韔: " +  precioEnvio  + " | Tiempo de preparacion: " + tiempoPrepEnvio + " d韆s";
     }
 }
