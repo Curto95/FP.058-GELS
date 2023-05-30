@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="gels.controlador.Articulo.ModificarArticuloVistaController">
+   <children>
+      <TextField fx:id="txtModArt" layoutX="165.0" layoutY="39.0" />
+      <Label fx:id="lblModArt" layoutX="33.0" layoutY="43.0" text="Codigo de artículo" />
+      <Button fx:id="btnModBuscArt" layoutX="342.0" layoutY="39.0" mnemonicParsing="false" text="Buscar Artículo" />
+      <TextField fx:id="tvtModDescArt" layoutX="214.0" layoutY="99.0" />
+      <TextField fx:id="txtModPrecArt" layoutX="214.0" layoutY="140.0" />
+      <TextField fx:id="txtModEnvArt" layoutX="214.0" layoutY="181.0" />
+      <TextField fx:id="txtModPrepArt" layoutX="214.0" layoutY="221.0" />
+      <Label fx:id="lblModDesArt" layoutX="73.0" layoutY="103.0" text="Nueva descripción" />
+      <Label fx:id="lblModPrecArt" layoutX="73.0" layoutY="144.0" text="Precio" />
+      <Label fx:id="lblModEnvArt" layoutX="73.0" layoutY="192.0" text="Precio envío" />
+      <Label fx:id="lblModPrepArt" layoutX="73.0" layoutY="225.0" text="Tiempo preparación" />
+      <Button fx:id="btnModGuardArt" layoutX="105.0" layoutY="290.0" mnemonicParsing="false" text="Guardar" />
+      <Button fx:id="btnModVolvArt" onAction="#volverMenArt" layoutX="419.0" layoutY="290.0" mnemonicParsing="false" text="Volver" />
+   </children>
+</AnchorPane>

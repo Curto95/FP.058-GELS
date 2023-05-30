@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" fx:id="lblMenuClien" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="gels.controlador.Cliente.MenuClientesVistaController">
+   <children>
+      <Label layoutX="276.0" layoutY="40.0" text="Menú Clientes" />
+      <Button fx:id="btnMenVerCli" layoutX="133.0" layoutY="139.0" mnemonicParsing="false" text="Ver Clientes" />
+      <Button fx:id="btnMenAñaClie" layoutX="417.0" layoutY="139.0" mnemonicParsing="false" text="Añadir Clientes" />
+      <Button fx:id="btnMenModClien" layoutX="116.0" layoutY="222.0" mnemonicParsing="false" text="Modificar Clientes" />
+      <Button fx:id="btnMenEliClien" layoutX="413.0" layoutY="235.0" mnemonicParsing="false" text="Eliminar Clientes" />
+      <Button fx:id="btnMenVolvClien" onAction="#volverGestion" layoutX="262.0" layoutY="285.0" mnemonicParsing="false" text="Volver a Gestión" />
+   </children>
+</AnchorPane>
